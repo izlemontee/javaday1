@@ -8,15 +8,15 @@ public class Cart {
     public static void main (String[] args) {
         System.out.println("Welcome to your shopping cart");
         List<String> shoppingCart = new LinkedList<>();
-        Console cons = System.console();
+        Console cons = System.console(); //console takes in user input via terminal
         //
         //String inputString = myScanner.nextLine();
         //list();
         boolean stop = false;
         while(!stop){
             String input = cons.readLine("> ");
-            Scanner myScanner = new Scanner(input);
-            String cmd = myScanner.next();
+            Scanner myScanner = new Scanner(input); //turns the user input (from console) to a scanner object
+            String cmd = myScanner.next(); //scanner is the one that reads the strings to find certain delimiters
             switch (cmd) {
                 case "stop":
                 stop = true;
